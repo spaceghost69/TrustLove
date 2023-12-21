@@ -15,7 +15,7 @@ TrustLove is a philosophy that integrates the Universal Genesis Theory, The Cycl
 
 ## Contributing
 
-We welcome contributions from the community! Whether you're interested in developing the website, creating music, or expanding our library of images and resources, your input is valuable.
+We welcome contributions from the community! Whether you're interested in developing the website, or expanding our library of images and resources, your input is valuable.
 
 ### How to Contribute
 
@@ -31,8 +31,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Connect With Us
 
-- **Website**: [trustlove.org](https://trustlove.org)
-- **Email**: contact@trustlove.org
-- **Social Media**: Follow us on [Twitter](https://twitter.com/trustlove), [Instagram](https://instagram.com/trustlove), and [Facebook](https://facebook.com/trustlove).
+- **Website**: [trustlove.io](https://trustlove.io)
+- **Email**: john@trustlove.io
+- **Social Media**: Follow us on [Instagram](https://instagram.com/trust.l0v3).
 
 Join us in spreading the message of TrustLove and building a community rooted in love, empathy, and understanding.
