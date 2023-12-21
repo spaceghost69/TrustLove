@@ -1,4 +1,4 @@
-# TrustLove
+# TrustLove[tm]
 
 Welcome to the TrustLove repository! This is the central hub for all resources and materials related to the TrustLove movement, an initiative combining philosophy, art, music, and science to promote universal empathy, interconnectedness, and understanding.
 
