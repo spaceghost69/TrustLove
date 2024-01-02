@@ -37096,7 +37096,7 @@ var _default = exports.default = /*#__PURE__*/function () {
     key: "createRenderTarget",
     value: function createRenderTarget() {
       // Render Target setup
-      this.rt = new THREE.WebGLRenderTarget(window.innerWidth, window.innerHeight);
+      this.rt = new THREE.WebGLRenderTarget(window.innerWidth / 2, window.innerHeight / 2);
       this.rtCamera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
       this.rtCamera.position.z = 2.5;
       this.rtScene = new THREE.Scene();
@@ -37116,7 +37116,7 @@ var _default = exports.default = /*#__PURE__*/function () {
   }, {
     key: "createMesh",
     value: function createMesh() {
-      this.geometry = new THREE.TorusKnotGeometry(8, 3, 380, 3, 4, 3);
+      this.geometry = new THREE.TorusKnotGeometry(13, 3, 380, 3, 4, 3);
       this.material = new THREE.ShaderMaterial({
         vertexShader: shaders.vert,
         fragmentShader: shaders.frag,
@@ -37160,8 +37160,8 @@ var _default = exports.default = /*#__PURE__*/function () {
   }, {
     key: "resize",
     value: function resize() {
-      var width = window.innerWidth;
-      var height = window.innerHeight;
+      var width = window.innerWidth / 2;
+      var height = window.innerHeight / 2;
       this.camera.aspect = width / height;
       this.camera.updateProjectionMatrix();
       this.renderer.setSize(width, height);
