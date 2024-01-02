@@ -30,6 +30,8 @@ export default class {
     );
 
     this.camera.position.z = 20;
+    this.camera.position.x = -20;
+    this.camera.position.y = -20;
 
     this.scene = new THREE.Scene();
 
@@ -71,12 +73,13 @@ export default class {
   createRenderTarget() {
     // Render Target setup
     this.rt = new THREE.WebGLRenderTarget(
-      window.innerWidth,
-      window.innerHeight
+      window.innerWidth/2,
+      window.innerHeight/2
     );
 
     this.rtCamera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
     this.rtCamera.position.z = 2.5;
+    
 
     this.rtScene = new THREE.Scene();
     this.rtScene.background = new THREE.Color("#000000");
@@ -94,7 +97,8 @@ export default class {
   }
 
   createMesh() {
-    this.geometry = new THREE.TorusKnotGeometry(8, 3, 380, 3, 4, 3);
+//    this.geometry = new THREE.TorusKnotGeometry(9, 3, 25, 32, 22, 3);
+    this.geometry = new THREE.TorusKnotGeometry(9, 3, 768, 3, 4, 3);
 
     this.material = new THREE.ShaderMaterial({
       vertexShader: shaders.vert,

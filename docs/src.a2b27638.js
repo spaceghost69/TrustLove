@@ -37060,6 +37060,8 @@ var _default = exports.default = /*#__PURE__*/function () {
     document.body.appendChild(this.renderer.domElement);
     this.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
     this.camera.position.z = 20;
+    this.camera.position.x = -20;
+    this.camera.position.y = -20;
     this.scene = new THREE.Scene();
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.clock = new THREE.Clock();
@@ -37096,7 +37098,7 @@ var _default = exports.default = /*#__PURE__*/function () {
     key: "createRenderTarget",
     value: function createRenderTarget() {
       // Render Target setup
-      this.rt = new THREE.WebGLRenderTarget(window.innerWidth, window.innerHeight);
+      this.rt = new THREE.WebGLRenderTarget(window.innerWidth / 2, window.innerHeight / 2);
       this.rtCamera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
       this.rtCamera.position.z = 2.5;
       this.rtScene = new THREE.Scene();
@@ -37116,7 +37118,8 @@ var _default = exports.default = /*#__PURE__*/function () {
   }, {
     key: "createMesh",
     value: function createMesh() {
-      this.geometry = new THREE.TorusKnotGeometry(8, 3, 380, 3, 4, 3);
+      //    this.geometry = new THREE.TorusKnotGeometry(9, 3, 25, 32, 22, 3);
+      this.geometry = new THREE.TorusKnotGeometry(9, 3, 768, 3, 4, 3);
       this.material = new THREE.ShaderMaterial({
         vertexShader: shaders.vert,
         fragmentShader: shaders.frag,
@@ -39610,7 +39613,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62434" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64890" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
