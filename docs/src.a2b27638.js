@@ -37116,7 +37116,7 @@ var _default = exports.default = /*#__PURE__*/function () {
   }, {
     key: "createMesh",
     value: function createMesh() {
-      this.geometry = new THREE.TorusKnotGeometry(9, 3, 768, 3, 4, 3);
+      this.geometry = new THREE.TorusKnotGeometry(8, 3, 380, 3, 4, 3);
       this.material = new THREE.ShaderMaterial({
         vertexShader: shaders.vert,
         fragmentShader: shaders.frag,
