@@ -2,8 +2,6 @@
 
 Welcome to the TrustLove repository! This is the central hub for all resources and materials related to the TrustLove movement, an initiative combining philosophy, art, music, and science to promote universal empathy, interconnectedness, and understanding.
 
-Guyys, I did not set out to create this thing, in fact I don't consider myself creating it at all at this point literally it has a life of its own and what is happening is that through discussing the ideas embodied in TrustLove various truths have been revealed to me 
-
 To whet your appetite here is an insight that was just revealed to me: IF TrustLove is "true" iin a cosmic sense especially UGT, then humnanity MUST embrace these principles or we will perish.
 
 It is inconceivable that we can continue as we are ... the status quo of environmental, gopolitical, and societal suicide. In the vernacular of TrustLove all of humanity is currently in The Void... those places and times where love andd trust are absent. War. Despair. Hate.
