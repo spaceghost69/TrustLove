@@ -286,7 +286,11 @@ const themes = {
 // Yeti
 // slate
 import '@shopify/polaris/build/esm/styles.css';
-import "bootswatch/dist/Quartz/bootstrap.min.css";
+
+
+import "./css/quartz/bootstrap.css";
+
+
 import "./App.css";
 
 import store from "./redux/store";

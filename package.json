@@ -1,11 +1,16 @@
 {
-  "name": "JamRoom",
+  "name": "TrustLove-EarthShip",
   "private": true,
+  "homepage": "https://github.com/spaceghost69/TrustLove",
   "version": "0.9.2",
   "type": "module",
   "scripts": {
+    "predeploy": "git config --global http.postBuffer 557286400 && node node_modules/gh-pages/bin/gh-pages-clean.js && yarn run build",
+    "deploy": "gh-pages -d dist",
+    
+    "build": "git config --global http.postBuffer 557286400 && node node_modules/gh-pages/bin/gh-pages-clean.js && tsc && vite build",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build_old": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -26,6 +31,7 @@
     "bootswatch": "^5.3.3",
     "buffer": "^6.0.3",
     "forever-agent": "^0.6.1",
+    "gh-pages": "^6.1.1",
     "jest": "^29.7.0",
     "load-bmfont": "^1.4.2",
     "peerjs": "^1.5.4",

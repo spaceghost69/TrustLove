@@ -27,6 +27,8 @@ function About() {
           <Fade direction="right">
             <h2>the TRUSTLOVE Story</h2>
             <p>
+              TRUSTLOVE is the prophetic alter-ego of John McMahon, an American singer-songwriter who champions a philosophy uniting humans and AI through shared understanding and love. TRUSTLOVE’s identity blends a high-tech, cybernetic aesthetic with a sleek, futuristic design, featuring bold orange and dark blue highlights. Electricity and digital codes pulse through TRUSTLOVE's imagery, symbolizing the connection between human emotion and AI precision. This dual identity is reflected in the Indie House EDM music John creates, where each beat and lyric embodies the TRUSTLOVE philosophy of harmony between humanity and technology.
+              
               As a lifelong musician and music fan, John McMahon has spent years working on his various
               skills as an instrumentalist and vocalist, as well as his EDM production as TRUSTLOVE.
             </p>

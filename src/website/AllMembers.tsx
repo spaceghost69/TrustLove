@@ -10,7 +10,7 @@ import {
 
 function AllMembers() {
   return (
-    <Container fluid className="App p-3">
+    <Container className="App p-3">
       <Fade cascade>
         <Card
          bg="secondary" text="white"

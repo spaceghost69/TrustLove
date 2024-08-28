@@ -147,7 +147,11 @@ const PointCloud = () => {
             }else{
               sound.setVolume(10);
             }
-            mediaElement.play();
+            
+            // TODO ENABLE THIS
+            // mediaElement.play();
+
+
           },
           { once: true }
         );
@@ -197,7 +201,7 @@ const PointCloud = () => {
 
 const RayCastWaves = () => (
   <Canvas
-    style={{height:"1500px"}}
+    
   >
     
     <PointCloud />

@@ -10,7 +10,7 @@ import {
 
 function Features() {
   return (
-    <Container fluid className="App p-3">
+    <Container className="App p-3">
       <Fade cascade={true}>
         <Container
           className="jumbotron"

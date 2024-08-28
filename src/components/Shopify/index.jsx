@@ -98,7 +98,7 @@ class Shopify extends Component {
           
           <div className="App__title">
             <h1>{this.state.shop.name} Online Store</h1>
-            <h4>{this.state.shop.description}</h4>
+            <p>{this.state.shop.description}</p>
           </div>
         </header>
         <Products
