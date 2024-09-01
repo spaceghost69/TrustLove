@@ -1,7 +1,7 @@
 import { Canvas, extend, useFrame, useThree } from '@react-three/fiber';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
-import Stats from 'three/examples/jsm/libs/stats.module';
+import * as Stats from 'three/examples/jsm/libs/stats.module';
 
 extend({ Stats });
 
@@ -200,10 +200,10 @@ const PointCloud = () => {
 };
 
 const RayCastWaves = () => (
-  <Canvas
-    
+<Canvas
+  className='RayCastWaves'
   >
-    
+
     <PointCloud />
   </Canvas>
 );

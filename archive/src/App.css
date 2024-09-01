@@ -1,0 +1,342 @@
+/* Base styling for the entire app */
+#root {
+  --font-size: 1em;
+  --dark-bg: #222222; /* Primary dark background */
+  --dark-secondary-bg: #3e3b3b; /* Secondary background for cards and areas needing slight contrast */
+  --accent-color: #ff6a00; /* Bright orange for accents */
+  --text-color: #dadada; /* White text for general use */
+  
+  --bs-table-bg: white; /* Black
+  
+  margin: 0 auto;
+  margin-top: 3em;
+  padding: 0;
+  text-align: center;
+
+  color: var(--text-color);
+  background-color: var(--dark-bg);
+  font-family: "roboto", sans-serif; /* Assuming Arial, adjust as per the design specifics */
+  font-size: var(--font-size);
+}
+
+.App{
+ /* background-color: #000000;*/
+ 
+}
+
+body {
+  /* Background image and gradient overlay */
+  background: 
+    linear-gradient(
+      180deg,
+      rgb(166, 0, 255),  
+    rgba(255, 153, 0, 0.75)
+      
+      
+    ),
+    url('/src/assets/images/trust_love_guitar_bw.png');
+  
+  /* Background properties */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  /* Other styles */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+/* Bootstrap Button Customization */
+.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+  
+  border-color: darken(var(--accent-color), 10%);
+}
+
+/* Card Customization */
+.card {
+ 
+  border: none;
+}
+
+.card .card-body {
+  color: var(--text-color);
+}
+
+/* Navbar, if present */
+.navbar {
+  background-color: var(--dark-secondary-bg);
+}
+
+/* Links and other elements */
+a,
+.btn-link {
+  color: var(--accent-color);
+}
+
+a:hover,
+.btn-link:hover {
+  color: darken(var(--accent-color), 10%);
+}
+
+/* Specific overrides or additional customizations */
+.custom-class {
+  background-color: var(--dark-secondary-bg);
+  color: var(--text-color);
+}
+
+/* This is a basic setup, and you might need to expand upon or adjust these styles 
+   depending on the exact components and layout specifics of your application. */
+
+/* Styling for logos */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animation for the logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+/* Styling for documentation links */
+.read-the-docs {
+  color: #bbb; /* Light grey for readable contrast */
+}
+
+/* Hero section styling for dark mode */
+.hero {
+  background: url("assets/images/Banner-hero.WEBP") no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero button {
+  background-color: #fa8231;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #e67e22;
+}
+
+/* Styling for feature sections in dark mode */
+.features div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+/* Testimonials section styling for dark mode */
+
+/* Call to action section styling */
+.cta-final {
+  background-color: #fa8231;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.cta-final button {
+  background-color: #fff;
+  color: #fa8231;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-final button:hover {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+/* Footer styling for dark mode */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fa8231;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styling for smaller devices */
+@media (max-width: 768px) {
+  .features div {
+    width: 100%;
+  }
+}
+
+
+
+.hero-section {
+  height: 100vh;
+  background: url("./assets/images/Banner-hero.WEBP") no-repeat center center/cover;
+  text-align: center;
+}
+
+
+
+h1,
+h2 {
+  color: #ff6a00; /* Accent color for headers */
+}
+
+.social-links a {
+  color: #ffffff; /* Orange color for icons */
+  font-size: 48px; /* Larger icons for better visibility */
+  transition: color .3s;
+}
+
+.social-links a:hover {
+  color: #000000; /* Lighter color on hover */
+}
+
+
+button:hover {
+  background-color: #e67e22; /* Darker orange on hover */
+}
+
+.form-control {
+  background-color: #333; /* Dark input fields for contrast */
+  color: #fff; /* White text for readability */
+  border: none;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 106, 0, 0.5); /* Glow effect on focus */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ddd; /* Lighter placeholder text for better readability */
+  opacity: 1; /* Firefox */
+}
+
+.background-container {
+  height: 180vh; /* Make the container fill the viewport height */
+}
+
+.background-container {
+  position: relative;
+  
+  width: 100%;
+  min-height: 350vh; /* Make the container fill the viewport height */
+  overflow: hidden; /* Hide any overflow from the background */
+}
+
+.background-container > .RayCastWaves {
+  position: absolute;
+  top:0px;
+  
+  left: 0;
+  width: 100%;
+  z-index: -10; /* Ensure it is behind other content */
+  pointer-events: none; /* Prevent the background from capturing pointer events */
+}
+
+.content-container {
+  position: relative;
+  
+  margin-top: -190em;
+  z-index: 1; /* Ensure it is on top of the background */
+  pointer-events: auto; /* Ensure this container is interactive */
+  
+}
+
+/* Responsive styling for smaller devices */
+@media (max-width: 768px) {
+  .background-container {
+    min-height: 400vh; /* Make the container fill the viewport height */
+  }
+  .content-container {
+    margin-top: -230em;  
+  }
+  .image {
+    max-width: 100%;
+    height: 300px;
+  }
+}
+
+/* Responsive styling for smaller devices */
+@media (max-width: 468px) {
+  .features div {
+    width: 100%;
+  }
+}
+
+.image {
+  border-radius: 15px;
+  
+  width: 100%;
+}
+
+.megaIcon {
+  opacity: .7;
+  z-index: -1;
+  word-wrap: break-word;
+  float:left;
+  margin-left:-80px;
+  margin-top: -100px;
+  margin-bottom: -80px;
+}
+
+
+.carouselCard {
+  overflow: hidden;
+  min-height: 380px;
+  max-height: 380px;
+  margin: 10px;
+}
+
+/* Active effect */

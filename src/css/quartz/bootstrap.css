@@ -222,7 +222,7 @@ hr {
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: 700;
   line-height: 1.2;
@@ -4386,7 +4386,7 @@ textarea.form-control-lg {
 }
 
 .card {
-  --bs-card-spacer-y: 1.75rem;
+  --bs-card-spacer-y: .75rem;
   --bs-card-spacer-x: 2rem;
   --bs-card-title-spacer-y: 1rem;
   --bs-card-title-color: ;

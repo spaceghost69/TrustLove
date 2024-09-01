@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a43c0389.css",
+    "main.js": "/static/js/main.2240049d.js",
+    "static/js/453.0f9482c8.chunk.js": "/static/js/453.0f9482c8.chunk.js",
+    "static/media/Endurance.mp4": "/static/media/Endurance.f8bb5c5762469a5f6dcd.mp4",
+    "static/media/trust_love_guitar_bw.png": "/static/media/trust_love_guitar_bw.a7a5143b2a2409751b17.png",
+    "static/media/John_TL.jpg": "/static/media/John_TL.6e70cf46e67378936468.jpg",
+    "static/media/Banner-hero.WEBP": "/static/media/Banner-hero.96634ac14952a149ddcb.WEBP",
+    "static/media/Techguitar.jpg": "/static/media/Techguitar.057e56886e181bbbb115.jpg",
+    "static/media/AppDesign.jpg": "/static/media/AppDesign.bd3f20783c83d1b1f842.jpg",
+    "static/media/TRUSTLOVE_LOGO_LARGE.png": "/static/media/TRUSTLOVE_LOGO_LARGE.f2c69c48191bca93289a.png",
+    "index.html": "/index.html",
+    "main.a43c0389.css.map": "/static/css/main.a43c0389.css.map",
+    "main.2240049d.js.map": "/static/js/main.2240049d.js.map",
+    "453.0f9482c8.chunk.js.map": "/static/js/453.0f9482c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a43c0389.css",
+    "static/js/main.2240049d.js"
+  ]
+}

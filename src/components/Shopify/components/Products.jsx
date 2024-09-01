@@ -1,24 +1,23 @@
-import React, { Component } from 'react';
-import Product from './Product';
+import React, { Component } from "react";
+import { Card, Image } from "react-bootstrap";
 
 class Products extends Component {
   render() {
-    let products = this.props.products.map((product) => {
+    let products = this.props.products.map((product, idx) => {
       return (
-        <Product
-          addVariantToCart={this.props.addVariantToCart}
-          client={this.props.client}
-          key={product.id.toString()}
-          product={product}
-        />
+        <Card key={idx}>
+          <h3>{product.title}:</h3>
+
+          {product.descriptionHtml}
+
+          {typeof product.images[0] !== "undefined" && (
+            <Image src={product.images[0].src} />
+          )}
+        </Card>
       );
     });
 
-    return (
-      <div className="Product-wrapper">
-        {products}
-      </div>
-    );
+    return <div className="Product-wrapper">{products}</div>;
   }
 }
 

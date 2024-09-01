@@ -1,0 +1,26 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 0.25%, not dead", // Target a wider range of browsers
+        "modules": false,               // Disable transformation of ES modules to CommonJS
+        "useBuiltIns": "entry",         // Polyfill only the features you need
+        "corejs": 3                     // Specify the version of core-js
+      }
+    ],
+    "@babel/preset-typescript",          // TypeScript support
+    [
+      "@babel/preset-react",             // React support
+      {
+        "runtime": "automatic"           // Enable the new JSX transform (no need to import React)
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-runtime", { "useESModules": true }], // For handling async/await, generators, etc.
+    "@babel/plugin-syntax-dynamic-import",                         // Support for dynamic imports
+    "@babel/plugin-proposal-class-properties",                     // Support for class properties
+    "@babel/plugin-proposal-private-methods"                       // Support for private methods in classes
+  ]
+}

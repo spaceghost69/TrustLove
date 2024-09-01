@@ -1,5 +1,5 @@
 import { Fade } from "react-awesome-reveal"; // For smooth fading transitions
-import { Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Form, Image, Row } from "react-bootstrap";
 import { FaEnvelope, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 function ContactUs() {
@@ -10,7 +10,7 @@ function ContactUs() {
           <Col md={8} className="text-center">
             <h4>
               CONTACT &nbsp; 
-              <img src="src/assets/TRUSTLOVE_LOGO_LARGE.png" width="50%" />
+              <Image src={require("../assets/TRUSTLOVE_LOGO_LARGE.png")} width="50%" />
             </h4>
             <p>
               Got a question? We'd love to hear from you. Send us a message and

@@ -1,9 +1,0 @@
-
-.trackRow{
-    display:flex;
-    justify-content:space-around;
-    max-height: 500px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-  }
-  

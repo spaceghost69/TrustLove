@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { Card } from 'react-bootstrap';
 import Client from 'shopify-buy';
 import Products from './components/Products';
 
@@ -18,8 +19,6 @@ class Shopify extends Component {
       shop: {}
     };
 
-
-    
     this.handleCartClose = this.handleCartClose.bind(this);
     this.addVariantToCart = this.addVariantToCart.bind(this);
     this.updateQuantityInCart = this.updateQuantityInCart.bind(this);
@@ -35,7 +34,7 @@ class Shopify extends Component {
     });
 
     this.client.product.fetchAll().then((res) => {
-      console.log("YO: " + products);
+      console.log("YO: " + res);
       this.setState({
         products: res,
       });
@@ -93,11 +92,11 @@ class Shopify extends Component {
 
   render() {
     return (
-      <div className="App">
+      <Card className="App">
         <header className="App__header">
           
           <div className="App__title">
-            <h1>{this.state.shop.name} Online Store</h1>
+            <h3>{this.state.shop.name} Store</h3>
             <p>{this.state.shop.description}</p>
           </div>
         </header>
@@ -111,7 +110,7 @@ class Shopify extends Component {
               <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}>Cart</button>
             </div>
           }
-      </div>
+      </Card>
     );
   }
 }

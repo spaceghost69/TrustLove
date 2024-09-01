@@ -1,0 +1,12 @@
+.video-container{
+    width:100px;
+    
+    background-color: #f30400cc;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.mixerRow{
+    min-height:1500px;
+}

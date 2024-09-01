@@ -1,7 +1,0 @@
-
-const Video = () => ({
-  
-    // TODO:
-  
-})
-export default Video;

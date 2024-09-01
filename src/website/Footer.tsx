@@ -1,4 +1,5 @@
-import { Col, Container } from "react-bootstrap";
+import React from "react";
+import { Col, Container, Image } from "react-bootstrap";
 import { FaEnvelope, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 function Footer() {
@@ -9,7 +10,7 @@ function Footer() {
 
         <div className="justify-content-center mt-5">
           <Col md={12} className="text-center">
-            <h4>Follow <img src="src/assets/TRUSTLOVE_LOGO_LARGE.png" width="25%" /></h4>
+            <h4>Follow <Image src={require("../assets/TRUSTLOVE_LOGO_LARGE.png")} width="25%" /></h4>
             <Container className="social-links">
               <a
                 href="https://www.facebook.com/profile.php?id=61561425107918"

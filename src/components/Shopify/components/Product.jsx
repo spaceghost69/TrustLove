@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import VariantSelector from './VariantSelector';
 
 class Product extends Component {
@@ -6,9 +6,9 @@ class Product extends Component {
     super(props);
 
     let defaultOptionValues = {};
-    this.props.product.options.forEach((selector) => {
-      defaultOptionValues[selector.name] = selector.values[0].value;
-    });
+   // this.props.product.options.forEach((selector) => {
+   //   defaultOptionValues[selector.name] = selector.values[0].value;
+   // });
     this.state = { selectedOptions: defaultOptionValues };
 
     this.handleOptionChange = this.handleOptionChange.bind(this);

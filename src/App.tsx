@@ -10,11 +10,11 @@ import About from "./website/About";
 import AllMembers from "./website/AllMembers";
 import ArtistHome from "./website/ArtistHome";
 import ContactUs from "./website/ContactUs";
-// import LiveStreams from "./website/LiveStreams";
+
 import { Buffer } from "buffer";
 import RayCastWaves from "./components/Visualizations/RayCastWaves";
 import Footer from "./website/Footer";
-import JamRoom from "./website/JamRoom";
+
 window.Buffer = Buffer;
 
 // 1️⃣ Changed from App to Root
@@ -24,7 +24,6 @@ function Groot() {
       <Route element={<Layout />}>
         {/*  <Route path="/live-streams" element={<LiveStreams />} /> */}
 
-        <Route path="/JamRoom" element={<JamRoom />} />
         <Route path="/all-members" element={<AllMembers />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact-us" element={<ContactUs />} />
