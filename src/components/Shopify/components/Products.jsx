@@ -1,23 +1,22 @@
 import React, { Component } from "react";
-import { Card, Image } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 
 class Products extends Component {
   render() {
-    let products = this.props.products.map((product, idx) => {
+    const products = this.props.products.map((product, key) => {
       return (
-        <Card key={idx}>
-          <h3>{product.title}:</h3>
-
-          {product.descriptionHtml}
-
-          {typeof product.images[0] !== "undefined" && (
-            <Image src={product.images[0].src} />
-          )}
-        </Card>
+        <Carousel.Item className="Product-wrapper d-flex justify-content-center"
+          key={key}
+          style={{ margin: "5%", padding: 5, minHeight: "350px" }}
+        >
+          {product.title}
+        </Carousel.Item>
       );
     });
 
-    return <div className="Product-wrapper">{products}</div>;
+    return (
+      <div>{products}</div>
+    );
   }
 }
 

@@ -1,18 +1,21 @@
 import { Container, Image, Nav, Navbar } from "react-bootstrap";
-import { FaGithub, FaInfoCircle, FaMailBulk, FaUser } from "react-icons/fa";
+import { FaGithub, FaInfoCircle, FaMailBulk } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
 
 export default function NavbarMenu() {
   return (
     <Navbar
+      className="navbarMenu"
       collapseOnSelect={true}
       fixed="top"
       expand="sm"
       bg="transparent"
       variant="light"
     >
-      <Container>
+      <Container
+        
+      >
         <Navbar.Brand>
           <Link to="/">
             <Image
@@ -25,15 +28,9 @@ export default function NavbarMenu() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link>
-              <a href="https://github.com/spaceghost69/TrustLove?tab=readme-ov-file">
+              <a href="https://github.com/spaceghost69/TrustLove">
                 <FaGithub size={32} />
               </a>
-            </Nav.Link>
-
-            <Nav.Link>
-              <Link to="all-members">
-                <FaUser size={32} />
-              </Link>
             </Nav.Link>
           </Nav>
           <Nav>
@@ -43,6 +40,7 @@ export default function NavbarMenu() {
               </Link>
             </Nav.Link>
           </Nav>
+
           <Nav>
             <Nav.Link>
               <Link to="contact-us">
@@ -50,6 +48,7 @@ export default function NavbarMenu() {
               </Link>
             </Nav.Link>
           </Nav>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

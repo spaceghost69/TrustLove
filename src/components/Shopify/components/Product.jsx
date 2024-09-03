@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { Carousel } from 'react-bootstrap';
 import VariantSelector from './VariantSelector';
-
 class Product extends Component {
   constructor(props) {
     super(props);
@@ -59,10 +59,15 @@ class Product extends Component {
       );
     });
     return (
+      <Carousel.Item >
+              <div
+                style={{ margin: "5%", padding: 5 , minHeight:'350px'}}
+                className="d-flex justify-content-center"
+              ></div>
       <div className="Product">
         {this.props.product.images.length ? <img src={variantImage.src} alt={`${this.props.product.title} product shot`}/> : null}
         <h5 className="Product__title">{this.props.product.title}</h5>
-        <span className="Product__price">${variant.price}</span>
+        <span className="Product__price">${variant.price.toString()}</span>
         {variantSelectors}
         <label className="Product__option">
           Quantity
@@ -70,6 +75,7 @@ class Product extends Component {
         </label>
         <button className="Product__buy button" onClick={() => this.props.addVariantToCart(variant.id, variantQuantity)}>Add to Cart</button>
       </div>
+      </Carousel.Item>
     );
   }
 }

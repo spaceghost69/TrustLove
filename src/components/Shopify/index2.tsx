@@ -27,7 +27,7 @@ client.product.fetchAll().then((products) => {
               {products && products.map( product => (
             JSON.stringify(product)
           ))}
-                <button onClick={() => alert("Button clicked!")}>
+                <button>
                   Example button
                 </button>
               </Card>

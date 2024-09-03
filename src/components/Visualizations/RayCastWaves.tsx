@@ -201,6 +201,7 @@ const PointCloud = () => {
 
 const RayCastWaves = () => (
 <Canvas
+    style={{height:"1500px"}}
   className='RayCastWaves'
   >
 

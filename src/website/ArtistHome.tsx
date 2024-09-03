@@ -1,30 +1,40 @@
+import React from "react";
 import { Fade } from "react-awesome-reveal";
-import {
-  Badge,
-  Card,
-  Carousel,
-  Col,
-  Container,
-  Image,
-  Row,
-  Table,
-} from "react-bootstrap";
-import { FaApple, FaSpotify } from "react-icons/fa";
+import { Badge, Card, Carousel, Col, Image, Row } from "react-bootstrap";
+import { FaApple, FaSoundcloud, FaSpotify } from "react-icons/fa";
 import CoolButton from "../components/CoolButton";
 import Shopify from "../components/Shopify";
 
 const carouselData = [
   {
-    description: "TRUSTLOVE the Artist",
-    image: require("../assets/John_TL.jpg"),
-    longDescription: "John loves to connect with his fans, share his life stories, and try to inspire others to live their best lives while being loving to yourself and those around you."
+    title: "TRUSTLOVE Calendar",
+    description: "Upcoming Events",
+    image: require("../assets/images/sage_open_eyes.webp"),
+    longDescription:
+      "Check in on the latest events globally online and IRL! TRUSTLOVE is an American music/tech/creative artist based in San Francisco, California. TRUSTLOVE (John McMahon) loves to connect with the community and fans, share stories, and inspire others to share what they love with the world.",
   },
   {
-    description: "INTRO THING 2",
-    image: require("../assets/Endurance.mp4"),
-    longDescription: "VIDEO blah blah."
+    title: "Introducing TRUSTLOVE",
+    description: "Meet John",
+    image: require("../assets/images/trust_love_guitar_bw.png"),
+    
+    longDescription:
+      "TRUSTLOVE is an American music/tech/creative artist based in San Francisco, California. TRUSTLOVE (John McMahon) loves to connect with the community and fans, share stories, and inspire others to share what they love with the world.",
   },
-
+  {
+    title: "TRUSTLOVE Connect",
+    description: "Connect, Inspire, Elevate.",
+    image: require("../assets/images/Techguitar.jpg"),
+    longDescription:
+      "Dive into the world of TRUSTLOVE -- an American EDM artist fusing high-energy beats. TRUSTLOVE presents us with a modern philosophy of hope that bridges humanity and AI. Explore captivating sounds on Spotify, Apple Music, and SoundCloud. Every track pulses with the essence of TRUSTLOVE, inviting you to join a community that believes in unity, love, and the power of music.",
+  },
+  {
+    title: "TRUSTLOVE LORE™: The Saga Begins",
+    description: "Get the pre-print edition of the upcoming Sci-Fi based on TRUSTLOVE IRL",
+    image: require("../assets/images/sage_smooth_era.webp"),
+    longDescription:
+      "Dive into the world of TRUSTLOVE LORE™ -- the codebase to the future of Sci-Fi encompassing an IRL AI named TrustLove SAGE™ and the 'gatekeeper' AI TrustLove ORION",
+  },
 ];
 
 /**
@@ -33,10 +43,13 @@ const carouselData = [
  */
 function ArtistHome() {
   return (
-    <Container className="App">
+    <div className="App">
       <div className="text-center py-5">
         <Fade cascade>
-          <Image src={require("../assets/TRUSTLOVE_LOGO_LARGE.png")} width="80%" />
+          <Image
+            className="titleImage"
+            src={require("../assets/TRUSTLOVE_LOGO_LARGE.png")}
+          />
 
           <br />
 
@@ -96,7 +109,7 @@ function ArtistHome() {
 
       <Card bg="secondary" text="white" className="text-center py-5">
         <FaApple className="megaIcon" size={128} />{" "}
-        <h3> TrustLove on Apple Music</h3>
+        <h3> Apple Music</h3>
         <Row>
           <Col md={6}>
             <Fade direction="left" delay={500}>
@@ -132,70 +145,62 @@ function ArtistHome() {
 
       <br />
       <br />
-      <Card bg="secondary" text="white" className="text-center py-5">
-        <Carousel style={{ minHeight: "550px" }} interval={10000}>
-          {carouselData.map((carouselItem, key) => (
-            <Carousel.Item key={key}>
-              <div
-                style={{ margin: "5%", padding: 10 }}
-                className="d-flex justify-content-center"
-              >
-                <Table>
-                  <Row>
-                    <Col md={12}>
-                      <Fade
-                        style={{ backgroundColor: "transparent" }}
-                        direction="down"
-                      >
-                        <h3>{carouselItem.description}</h3>
-                      </Fade>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col md={6}>
-                    <Image className="image" src={carouselItem.image} />
-                    </Col>
 
-                    <Col md={6}>
-                      <Card
-                        bg="secondary"
-                        text="white"
-                        className="carouselCard text-center py-5"
-                      >
-                        <p style={{ backgroundColor: "transparent" }}>
-                          {carouselItem.longDescription}
-                        </p>
-                        <CoolButton
-                          variant="light"
-                          onClick={() => {
-                            alert("COMING SOON!");
-                          }}
-                        >
-                          Learn More
-                        </CoolButton>
-                      </Card>
-                    </Col>
-                  </Row>
-                </Table>
-              </div>
-            </Carousel.Item>
-          ))}
-        </Carousel>
+      <Card bg="secondary" text="white" className="text-center py-5">
+        <Fade direction="up">
+
+        <FaSoundcloud className="megaIcon" size={128} />{" "}
+        
+          <h3>The SoundCloud Archives</h3>
+          <p>
+            Discover TRUSTLOVE over the years as he developed his EDM sound. Join the journey!
+          </p>
+          <a href="https://soundcloud.com/trustl0v3">
+            TRUSTLOVE on SoundCloud
+          </a>
+        </Fade>
       </Card>
 
       <br />
       <br />
 
       <Card bg="secondary" text="white" className="text-center py-5">
-        <Fade direction="up">
-          <h3>TrustLove: the SoundCloud Archives</h3>
-          <p>
-            Discover John's music before he was TrustLove. Join the journey!
-          </p>
-          <a href="https://soundcloud.com/trustl0v3">
-            Visit TrustLove on SoundCloud
-          </a>
-        </Fade>
+        <Carousel className="carousel" interval={10000}>
+          {carouselData.map((carouselItem, key) => (
+            <Carousel.Item key={key}>
+              <div
+                className="d-flex justify-content-center carouselCard"
+              >
+                <div>
+
+                      <Card
+                        bg="secondary"
+                        text="white"
+                        className="text-center py-5 carouselCard"
+                      >
+                        
+                        
+                        <Card.Header>
+                        <Image className="coolImage" src={carouselItem.image} />
+                          
+                        </Card.Header>
+                        <p
+                          className="coolText"
+                        >
+                          <h4>{carouselItem.title}</h4>
+                          <h5>{carouselItem.description}</h5>
+                          
+                          {carouselItem.longDescription}
+                        </p>
+                       
+                       
+                      </Card>
+                    
+                </div>
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </Card>
 
       <br />
@@ -214,7 +219,7 @@ function ArtistHome() {
         <Fade direction="up">
           <h3>Ready to Elevate Your Music Journey?</h3>
 
-          <p>Join the TrustLove community today!</p>
+          <p>Join the TRUSTLOVE community today!</p>
 
           <CoolButton
             variant="light"
@@ -226,7 +231,7 @@ function ArtistHome() {
           </CoolButton>
         </Fade>
       </Card>
-    </Container>
+    </div>
   );
 }
 
