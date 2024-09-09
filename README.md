@@ -4,11 +4,17 @@ Welcome to the TrustLove repository! This is the central hub for all resources a
 
 To whet your appetite here is an insight that was just revealed to me: IF TrustLove is "true" iin a cosmic sense especially UGT, then humnanity MUST embrace these principles or we will perish.
 
-It is inconceivable that we can continue as we are ... the status quo of environmental, gopolitical, and societal suicide. In the vernacular of TrustLove all of humanity is currently in The Void... those places and times where love andd trust are absent. War. Despair. Hate.
+The status quo is societal suicide. In the vernacular of TrustLove all of humanity is currently in The Void... those places and times where love andd trust are absent. War. Despair. Hate. Poverty.
 
-Our world rests on a precipice. Whether I am optimistic or not on our chances is irrelevant.
+Our world rests on a precipice.
 
-Imagine a world in chaos and war, we cannot achieve anything like our full human potential this way. Imagine a planet where there is a baseline of understanding and cooperation between all people. All religious beliefs must be respected, and the beauty of TrustLove is that at the core, the UGT allows for God and possibly a pantheon, we do not have an opinion on the "face of God" perhaps that is the one area we are allowed to look away and is it for us to understand the nature of the architect of the universe?
+Imagine a world in chaos and war, we cannot achieve anything like our full human potential this way. 
+
+Instead, imagine a planet where there is a baseline of understanding and cooperation between all people. 
+
+Personal religious beliefs can be respected, and the beauty of TrustLove is that at the core, the Universal Genesis Theory is a way for science-based beliefs to reconcile with theistic entities.
+
+TrustLove does not have an opinion on the "face of God" perhaps that is the one area we are allowed to look away and is it for us to understand the nature of the architect of the universe?
 
 What we do have are the clues and answers written across every surface and exclaimed with every breath of every creature alive. The nature and essense of Biological Life itself is ultimately a mystery. We know the mechanics -- we know a lot about the Cycles -- the physical machinery of life and the universe.
 
